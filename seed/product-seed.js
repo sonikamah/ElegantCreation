@@ -26,25 +26,25 @@ var dbURI = 'mongodb://localhost/shoppingcart';
 var products = [
     new Product({
         imagePath: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_4ye0RYY_XUS6_Ov90iSppIa7VT8zoF_FP-4YkN-iBaYS9eM4',
-        title: 'Silver Suit',
+        title: 'Blue Suit',
         description: 'Made of Silk ',
         price: 100
     }),
     new Product({
         imagePath: 'https://images-eu.ssl-images-amazon.com/images/I/51-mQ+KEZUL._AC_UL260_SR200,260_.jpg',
-        title: 'Golden Suit',
+        title: 'Pink Suit',
         description: 'Made of Shiphon',
         price: 23
     }),
     new Product({
         imagePath: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZeQl8P4SKCjygys1Yq4FMnySxgoe0elGKJpiN9Lzq0hbyJBqrSw',
-        title: 'Orange Suit',
+        title: 'Pink Green Suit',
         description: 'Made of Cottan',
         price: 45
     }),
     new Product({
         imagePath: 'http://www.fashionfemina.com/blog/wp-content/uploads/2015/09/black-salwar-suit.jpg',
-        title: 'Orange Suit',
+        title: 'Black Suit',
         description: 'Made of SilkCottan',
         price: 12
     }),
@@ -56,13 +56,13 @@ var products = [
     }),
     new Product({
         imagePath: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNmG5zAzr2DzEDJPcEtakilryU_WhdEqjgW92CnOstsvijv8qh1A',
-        title: 'Orange Suit',
+        title: 'Red Suit',
         description: 'Made of Silk',
         price: 20
     }),
     new Product({
         imagePath: 'http://www.metromela.com/wp-content/uploads/2013/10/Wedding-salwar-suit.jpg',
-        title: 'Orange Suit',
+        title: 'Blue Suit',
         description: 'Made of Juite',
         price: 10
     }),

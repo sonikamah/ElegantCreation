@@ -37,6 +37,32 @@ router.get('/add-to-cart/:id' , function(req , res , next){
 });
 
 
+/* Reduce the order by one form cart */
+router.get('/reduce/:id' , function(req , res , next){
+  var productId = req.params.id;
+  //passing session cart if already exist in session
+  var cart = new Cart(req.session.cart ? req.session.cart : {} );
+  
+  cart.reducedByOne(productId);
+  req.session.cart = cart;
+  res.redirect('/shopping-cart');
+  
+});
+
+
+/* remove all the order form cart */
+router.get('/remove/:id' , function(req , res , next){
+  var productId = req.params.id;
+  //passing session cart if already exist in session
+  var cart = new Cart(req.session.cart ? req.session.cart : {} );
+  
+  cart.removeAllItem(productId);
+  req.session.cart = cart;
+  res.redirect('/shopping-cart');
+  
+});
+
+
 router.get('/shopping-cart' , function(req, res, next){
 
   if(!req.session.cart){
